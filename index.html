@@ -1,0 +1,28 @@
+<!DOCTYPE = html>
+<html>
+  <body>
+    <div class="container">
+      <style> h1, h3 { text-align: center;}</style>
+      <h1>Motorsport Fan Race Hub</h1>
+      <h3>Currently Tracking: Max Verstappen</h3>
+      <br><br>
+      <div class="row">
+        <div class = "column" style = "width:50%; float:left">
+          <h2>Speed Tracker</h2>
+          <br><br>
+          <textarea id="speed-display" style="width: 75%" rows="50" placeholder="Speed Display..."></textarea>
+        </div>
+        <div class = "column" style = "width:50%; float:left" >
+          <h2>Lap Time Tracker</h2>
+          <button id="history">Retrieve message history</button><br>
+          <textarea id="history-display" style="width: 75%" rows="50" placeholder="Lap History Display..."></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+ 
+  <script src="https://cdn.ably.io/lib/ably.min.js"></script>
+  <!-- Instance the Ably library  -->
+  <script type="text/javascript" src="{{url_for('static', filename='main.js')}}"></script>
+
+</html>
