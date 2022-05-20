@@ -4,7 +4,7 @@ import time
 import datetime
 import asyncio
 
-API_KEY = 'MTjZGg.F4pyTg:Cb6yxwC6P3ZxW_kgkxF4DShAh5KbkRMG3WA2QpL2DtY'
+API_KEY = #YOUR-API-KEY-HERE#
 
 faker = Faker()
 
