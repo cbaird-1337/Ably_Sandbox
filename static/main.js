@@ -4,8 +4,8 @@ window.onload = function() {
   
   function load_ably_data(){
   
-    var realtime = new Ably.Realtime('MTjZGg.F4pyTg:Cb6yxwC6P3ZxW_kgkxF4DShAh5KbkRMG3WA2QpL2DtY'); 
-    /* Get a channel in the "persisted" namespace */
+    var realtime = new Ably.Realtime(/*YOUR-API-KEY-HERE*/); 
+    /* Get a channel */
     var speed_channel = realtime.channels.get("Car-Speed");
 
     var display = document.getElementById("speed-display")
@@ -14,7 +14,7 @@ window.onload = function() {
         });
 
 
-    /* Get a channel in the "persisted" namespace */
+    /* Get a channel with rewind enabled */
     var lap_channel = realtime.channels.get("[?rewind=10]Lap-Time");
     
     /* Retrieve messages from history */
